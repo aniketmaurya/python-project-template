@@ -1,0 +1,72 @@
+site_name: GradsFlow
+site_description: "An open-source AutoML Library in PyTorch"
+site_author: AUTHOR NAME
+copyright: 'Copyright &copy; 2021 AUTHOR NAME'
+
+banner_url: https://ik.imagekit.io/gradsflow/logo/logo-small_g2MxLWesD.png?updatedAt=1627716948296
+repo_url: https://github.com/aniketmaurya/python-project-template/
+repo_name: aniketmaurya/python-project-template
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+  logo: https://ik.imagekit.io/gradsflow/logo/logo-small_g2MxLWesD.png?updatedAt=1627716948296
+  favicon: https://ik.imagekit.io/gradsflow/favicon/favicon_7lEXKqKWxlD.ico?updatedAt=1627717083206
+  features:
+    - search.suggest
+    - search.highlight
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - git-revision-date-localized
+  - search
+  - autorefs
+  - mkdocs-jupyter
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          rendering:
+            show_source: false
+
+extra:
+  homepage: https://docs.gradsflow.com
+
+nav:
+  - Introduction: 'index.md'
+    - Examples:
+        - Auto Image Classification: 'examples/nbs/01-ImageClassification.ipynb'
+        - Auto Text Classification: 'examples/nbs/02-TextClassification.ipynb'
+        - Auto Summarization: 'examples/nbs/03-TextSummarization.ipynb'
+  - Release Notes: 'CHANGELOG.md'
