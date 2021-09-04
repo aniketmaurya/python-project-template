@@ -3,7 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module = "PROJECT_NAME"
+module = "project"
 author = "AUTHOR_NAME"
 author-email = "AUTHOR_EMAIL"
 home-page = "https://github.com/USERNAME/PROJECT_NAME"
@@ -26,7 +26,6 @@ classifiers = [
 ]
 requires-python = ">=3.6"
 requires = [
-    "loguru>=0.5.3"
 ]
 
 [tool.flit.metadata.urls]
