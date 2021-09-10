@@ -1,5 +1,5 @@
-site_name: GradsFlow
-site_description: "An open-source AutoML Library in PyTorch"
+site_name: TEMPLATE_NAME
+site_description: TEMPLATE_DESCRIPTION
 site_author: AUTHOR NAME
 copyright: 'Copyright &copy; 2021 AUTHOR NAME'
 
