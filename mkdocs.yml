@@ -1,7 +1,7 @@
 site_name: TEMPLATE_NAME
 site_description: TEMPLATE_DESCRIPTION
 site_author: AUTHOR NAME
-copyright: 'Copyright &copy; 2021 AUTHOR NAME'
+copyright: 'Copyright &copy; 2023 AUTHOR NAME'
 
 banner_url: https://IMAGE_URL
 repo_url: https://github.com/aniketmaurya/python-project-template/

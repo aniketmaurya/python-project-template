@@ -47,8 +47,7 @@ jobs:
           python --version
           pip --version
           python -m pip install --upgrade pip
-          pip install flit
-          flit install --deps all
+          pip install coverage pytest
           pip list
         shell: bash
 
@@ -76,10 +75,3 @@ jobs:
           env_vars: OS,PYTHON
           name: codecov-umbrella
           fail_ci_if_error: false
-
-#      - name: SonarCloud Scan
-#        if: runner.os != 'macOS' &&  env.SONAR_TOKEN != null
-#        uses: SonarSource/sonarcloud-github-action@master
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
