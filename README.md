@@ -9,17 +9,17 @@ A template to kick-start your open-source Python project.
 Install my-project with pip
 
 ```bash
+  git clone https://github.com/aniketmaurya/python-project-template.git
+  cd python-project-template
   pip install .
-  cd my-project
 ```
 
 ## Usage/Examples
 
 ```python
-from my_project import do_something_awesome
+from template_project import do_something_awesome
 
-
-do_something_awesome()
+print(do_something_awesome())
 ```
 
 
