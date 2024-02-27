@@ -8,16 +8,11 @@
 				"ms-python.pylint",
 				"ms-toolsai.jupyter",
 				"github.copilot",
-				"ahmadawais.shades-of-purple",
 				"ms-vscode.makefile-tools",
 				"ms-azuretools.vscode-docker",
 				"twixes.pypi-assistant",
-				"ahmadawais.emoji-log-vscode",
 				"EditorConfig.EditorConfig"
-			],
-            "settings": {
-                "workbench.colorTheme": "Shades of Purple (Super Dark)"
-            }
+			]
         }
     }
 }
