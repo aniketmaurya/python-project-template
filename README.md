@@ -5,6 +5,7 @@ A template to kick-start your open-source Python project.
 
 
 ## Installation
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false)
 
 Install my-project with pip
 

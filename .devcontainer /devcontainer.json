@@ -1,0 +1,18 @@
+{
+    "customizations": {
+        "codespaces": {
+        },
+        "vscode": {
+            "extensions": [
+				"ms-python.python",
+				"ms-python.pylint",
+				"ms-toolsai.jupyter",
+				"github.copilot",
+				"ms-vscode.makefile-tools",
+				"ms-azuretools.vscode-docker",
+				"twixes.pypi-assistant",
+				"EditorConfig.EditorConfig"
+			]
+        }
+    }
+}
