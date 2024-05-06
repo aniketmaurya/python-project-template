@@ -1,7 +1,7 @@
 site_name: TEMPLATE_NAME
 site_description: TEMPLATE_DESCRIPTION
 site_author: AUTHOR NAME
-copyright: 'Copyright &copy; 2023 AUTHOR NAME'
+copyright: 'Copyright &copy; 2024 AUTHOR NAME'
 
 banner_url: https://IMAGE_URL
 repo_url: https://github.com/aniketmaurya/python-project-template/
@@ -42,9 +42,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - admonition
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - toc:
       permalink: true
 
