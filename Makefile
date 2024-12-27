@@ -5,7 +5,6 @@ docsserve:
 	mkdocs serve --dirtyreload --livereload
 
 test:
-	python tests/__init__.py
 	pytest
 
 coverage:  ## Run tests with coverage
@@ -23,8 +22,8 @@ clean:
 	rm -f .coverage
 
 style:
-	black .
 	isort --profile black .
+	ruff format .
 
 push:
 	git push && git push --tags
