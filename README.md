@@ -19,49 +19,23 @@
   </a>
 </p>
 
-
 <p align="center">
   <a href="https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false">
     <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces">
   </a>
 </p>
 
-
-
-# Installation
-
-## From Source
-```bash
-git clone https://github.com/aniketmaurya/python-project-template.git
-cd python-project-template
-pip install .
-```
-
-## Development Installation
-```bash
-git clone https://github.com/aniketmaurya/python-project-template.git
-cd python-project-template
-pip install -e ".[dev]"
-```
-
-# Usage
-
-```python
-from python_project_template import do_something_awesome
-
-print(do_something_awesome())
-```
-
 # Features
 
 - 🚀 Modern Python project structure
-- 📦 Pre-configured setup.py and pyproject.toml
-- 🧪 Testing setup with pytest
-- 👷 CI/CD with GitHub Actions
+- 📦 Pre-configured [pyproject.toml](pyproject.toml)
+- 🤖 ML server template with [LitServe](https://github.com/Lightning-AI/LitServe)
+- 🧪 Testing setup with [pytest](https://docs.pytest.org/en/latest/)
+- 👷 CI/CD with [GitHub Actions](https://github.com/aniketmaurya/python-project-template/blob/main/.github/workflows)
 - 📝 Auto-generated documentation
 - 🎯 Type hints and static type checking
-- 🔍 Code formatting with black and isort
-- 🐛 Linting with flake8
+- 🔍 Code formatting with ruff and isort
+- 🐛 Linting with ruff
 
 # Project Structure
 
@@ -80,21 +54,50 @@ python-project-template/
 └── setup.py              # Package installation
 ```
 
+# Installation
+
+## From Source
+
+```bash
+git clone https://github.com/aniketmaurya/python-project-template.git
+cd python-project-template
+pip install .
+```
+
+## Development Installation
+
+```bash
+git clone https://github.com/aniketmaurya/python-project-template.git
+cd python-project-template
+pip install -e ".[dev]"
+```
+
+## Usage
+
+```python
+from python_project_template import do_something_awesome
+
+print(do_something_awesome())
+```
+
 # Development
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/aniketmaurya/python-project-template.git
 cd python-project-template
 ```
 
 2. Create a virtual environment
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
 3. Install development dependencies
+
 ```bash
 pip install -e ".[dev]"
 ```
@@ -105,7 +108,7 @@ pip install -e ".[dev]"
 pytest tests/
 ```
 
-## Contributing
+# Contributing
 
 Contributions are always welcome! Here's how you can help:
 
