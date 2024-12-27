@@ -1,5 +1,7 @@
 <div align="center">
   <h1>Python Project Template 🐍</h1>
+  <!-- A brief description of what this project does and who it's for -->
+  <p>A template to kick-start your open-source Python project.</p>
 </div>
 
 <p align="center">
@@ -17,8 +19,6 @@
   </a>
 </p>
 
-<!-- A brief description of what this project does and who it's for -->
-A template to kick-start your open-source Python project.
 
 
 # Installation
