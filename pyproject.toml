@@ -1,3 +1,35 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-template-project"
+description = "Python template project"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+dynamic = ["version"]
+dependencies = [
+    "litserve>=0.2.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["python_project_template*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "python_project_template.__version__"}
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+lint.select = ["I"]# implementation for isort
+
+[dependency-groups]
+dev = [
+    "mkdocs-material>=9.5.49",
+    "mkdocs>=1.6.1",
+    "pytest>=8.3.4",
+    "ruff>=0.8.4",
+    "uv>=0.5.12",
+]

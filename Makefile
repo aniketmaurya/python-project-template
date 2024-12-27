@@ -2,17 +2,16 @@ build-docs:
 	cp README.md docs/index.md
 
 docsserve:
-	mkdocs serve --dirtyreload --livereload
+	uv run mkdocs serve
 
 test:
-	python tests/__init__.py
 	pytest
 
 coverage:  ## Run tests with coverage
-		coverage erase
-		coverage run -m pytest
-		coverage report -m
-		coverage xml
+	coverage erase
+	coverage run -m pytest
+	coverage report -m
+	coverage xml
 
 clean:
 	rm -rf dist
@@ -23,8 +22,8 @@ clean:
 	rm -f .coverage
 
 style:
-	black .
 	isort --profile black .
+	ruff format .
 
 push:
 	git push && git push --tags

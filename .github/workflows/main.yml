@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest, macos-latest ]
-        python-version: [3.8, 3.9]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
         include:
           - os: ubuntu-latest
             path: ~/.cache/pip
@@ -20,7 +20,7 @@ jobs:
             path: ~/Library/Caches/pip
     env:
       OS: ${{ matrix.os }}
-      PYTHON: '3.9'
+      PYTHON: ${{ matrix.python-version }}
 
 
     steps:
@@ -47,14 +47,10 @@ jobs:
           python --version
           pip --version
           python -m pip install --upgrade pip
-          pip install coverage pytest
-          pip install .
+          pip install coverage pytest pytest-cov
+          pip install ".[dev]"
           pip list
         shell: bash
-
-      - name: Prepare Test
-        run: |
-          python tests  # download test data
 
       - name: Run Test with Coverage
         run: |
