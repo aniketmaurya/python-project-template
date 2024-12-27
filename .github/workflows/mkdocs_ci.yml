@@ -12,4 +12,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install mkdocs mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: make build-docs && mkdocs gh-deploy --force
