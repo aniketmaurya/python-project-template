@@ -17,8 +17,12 @@
   <a href="https://github.com/aniketmaurya/python-project-template/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/aniketmaurya/python-project-template.svg" alt="license">
   </a>
-  <a href="https://github.com/codespaces/badge.svg">
-    <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces">
+</p>
+
+<p>
+<p align="center">
+<a href="https://github.com/codespaces/badge.svg">
+    <img src="https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false" alt="Open in GitHub Codespaces">
   </a>
 </p>
 
