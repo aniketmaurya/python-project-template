@@ -28,4 +28,5 @@ lint.select = ["I"]# implementation for isort
 [dependency-groups]
 dev = [
     "mkdocs>=1.6.1",
+    "pytest>=8.3.4",
 ]
