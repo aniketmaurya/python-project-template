@@ -9,7 +9,7 @@ class SimpleLitAPI(ls.LitAPI):
 
     def decode_request(self, request):
         # Convert the request payload to model input.
-        return request["input"] 
+        return request["input"]
 
     def predict(self, x):
         # Easily build compound systems. Run inference and return the output.
@@ -18,7 +18,8 @@ class SimpleLitAPI(ls.LitAPI):
 
     def encode_response(self, output):
         # Convert the model output to a response payload.
-        return {"output": output} 
+        return {"output": output}
+
 
 # (STEP 2) - START THE SERVER
 if __name__ == "__main__":

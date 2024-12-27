@@ -30,5 +30,6 @@ dev = [
     "mkdocs-material>=9.5.49",
     "mkdocs>=1.6.1",
     "pytest>=8.3.4",
+    "ruff>=0.8.4",
     "uv>=0.5.12",
 ]
