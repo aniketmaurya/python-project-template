@@ -52,10 +52,6 @@ jobs:
           pip list
         shell: bash
 
-      - name: Prepare Test
-        run: |
-          python tests  # download test data
-
       - name: Run Test with Coverage
         run: |
           coverage erase
