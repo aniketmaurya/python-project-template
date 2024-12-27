@@ -7,7 +7,7 @@ A template to kick-start your open-source Python project.
 ## Installation
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false)
 
-Install the [Template Project] with pip
+Install the [Python Project Template] with pip
 
 ```bash
   git clone https://github.com/aniketmaurya/python-project-template.git
@@ -18,23 +18,7 @@ Install the [Template Project] with pip
 ## Usage/Examples
 
 ```python
-from template_project import do_something_awesome
+from python_project_template import do_something_awesome
 
 print(do_something_awesome())
 ```
-
-
-<!-- ## Demo
-
-Insert gif or link to demo -->
-
-
-<!-- ## FAQ
-
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2 -->
