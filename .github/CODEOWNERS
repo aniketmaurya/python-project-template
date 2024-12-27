@@ -12,7 +12,9 @@
 # This should make it easy to add new rules without breaking existing ones.
 
 # Global rule:
+<!-- Replace with your GitHub username -->
 *           @aniketmaurya
 
 # tests
+<!-- Replace with your GitHub username -->
 /tests/**  @aniketmaurya

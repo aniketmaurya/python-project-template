@@ -1,4 +1,4 @@
-from template_project.awesome import do_something_awesome
+from python_project_template.awesome import do_something_awesome
 
 
 def test_do_something_awesome():
