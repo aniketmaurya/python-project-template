@@ -2,16 +2,16 @@ build-docs:
 	cp README.md docs/index.md
 
 docsserve:
-	mkdocs serve --dirtyreload --livereload
+	uv run mkdocs serve
 
 test:
 	pytest
 
 coverage:  ## Run tests with coverage
-		coverage erase
-		coverage run -m pytest
-		coverage report -m
-		coverage xml
+	coverage erase
+	coverage run -m pytest
+	coverage report -m
+	coverage xml
 
 clean:
 	rm -rf dist
