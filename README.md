@@ -3,14 +3,11 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/aniketmaurya/python-project-template/actions">
-    <img src="https://github.com/aniketmaurya/python-project-template/workflows/CI/badge.svg" alt="CI">
+  <a href="https://github.com/aniketmaurya/python-project-template/actions/workflows/main.yml">
+    <img src="https://github.com/aniketmaurya/python-project-template/actions/workflows/main.yml/badge.svg" alt="Tests">
   </a>
   <a href="https://codecov.io/gh/aniketmaurya/python-project-template">
     <img src="https://codecov.io/gh/aniketmaurya/python-project-template/branch/main/graph/badge.svg" alt="codecov">
-  </a>
-  <a href="https://pypi.org/project/python-project-template/">
-    <img src="https://img.shields.io/pypi/v/python-project-template.svg" alt="pypi">
   </a>
   <a href="https://github.com/psf/black">
     <img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="black">
