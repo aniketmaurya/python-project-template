@@ -2,7 +2,7 @@ build-docs:
 	cp README.md docs/index.md
 
 docsserve:
-	uv run mkdocs serve
+	mkdocs serve
 
 test:
 	pytest
@@ -29,7 +29,7 @@ push:
 	git push && git push --tags
 
 build:
-	python -m build
+	python -m build --wheel
 
 publish-test:
 		$(style clean build)
