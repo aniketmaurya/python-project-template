@@ -11,5 +11,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: "3.12"
-      - run: pip install uv && uv pip install mkdocs mkdocs-material
-      - run: uv run mkdocs gh-deploy --force
+      - run: pip install mkdocs mkdocs-material
+      - run: mkdocs gh-deploy --force
