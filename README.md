@@ -19,10 +19,10 @@
   </a>
 </p>
 
-<p>
+
 <p align="center">
-<a href="https://github.com/codespaces/badge.svg">
-    <img src="https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false" alt="Open in GitHub Codespaces">
+  <a href="https://github.com/codespaces/badge.svg)](https://codespaces.new/aniketmaurya/python-project-template?template=false">
+    <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces">
   </a>
 </p>
 
