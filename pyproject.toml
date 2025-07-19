@@ -25,7 +25,7 @@ line-length = 120
 target-version = "py39"
 lint.select = ["I"]# implementation for isort
 
-[dependency-groups]
+[project.optional-dependencies]
 dev = [
     "mkdocs-material>=9.5.49",
     "mkdocs>=1.6.1",
