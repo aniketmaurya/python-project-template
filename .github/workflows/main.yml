@@ -1,64 +1,62 @@
 name: pytest
+
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
-
+    branches: [main]
 
 jobs:
   pytest:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ ubuntu-latest, macos-latest ]
+        os: [ubuntu-latest, macos-latest]
         python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
         include:
           - os: ubuntu-latest
-            path: ~/.cache/pip
+            uv-cache: ~/.cache/uv
           - os: macos-latest
-            path: ~/Library/Caches/pip
+            uv-cache: ~/Library/Caches/uv
     env:
       OS: ${{ matrix.os }}
       PYTHON: ${{ matrix.python-version }}
 
-
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - uses: actions/checkout@v4
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Cache pip
-        uses: actions/cache@v2
+      - name: Cache uv cache
+        uses: actions/cache@v4
         with:
-          path: ${{ matrix.path }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          path: ${{ matrix.uv-cache }}
+          key: ${{ runner.os }}-uv-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-pip-
+            ${{ runner.os }}-uv-
             ${{ runner.os }}-
 
-      - name: Install
+      - name: Install dependencies using uv
         run: |
-          python --version
-          pip --version
-          python -m pip install --upgrade pip
-          pip install coverage pytest pytest-cov
-          pip install ".[dev]"
-          pip list
-        shell: bash
+          pip install uv
+          uv venv
+          source .venv/bin/activate
+          uv pip install coverage pytest pytest-cov
+          uv pip install ".[dev]"
+          uv pip list
 
-      - name: Run Test with Coverage
+      - name: Run Tests
         run: |
+          source .venv/bin/activate
           coverage erase
           coverage run -m pytest
 
       - name: Generate Coverage Report
         run: |
+          source .venv/bin/activate
           coverage report -m -i
           coverage xml -i
 
